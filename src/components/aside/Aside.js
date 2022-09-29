@@ -3,13 +3,13 @@ import Profile from "../profile/Profile";
 import { useState, useEffect } from "react";
 import "./Aside.css";
 
-const Aside = (subj) => {
+const Aside = ({subj}) => {
     console.log(subj);
-    // let total =0;
-    // for(const carts of subj){
+    let total =0;
+    for(const item of subj){
 
-    //     total = total + carts.duration;
-    // }
+        total = total + item.time;
+    }
 
 
 
@@ -52,7 +52,7 @@ const Aside = (subj) => {
       <div>
         <h3>Reading Details</h3>
         <h4 className="break-style">
-          Reading time <span className="total">{} Min</span>
+          Reading time <span className="total">{total} Min</span>
         </h4>
       </div>
       <div className="break-style">
