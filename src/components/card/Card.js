@@ -7,6 +7,7 @@ const Card = ({btnFunction, card}) => {
     return (
         <div className='card'>
             <img src={img} alt={name} />
+            {/* card-body */}
             <div className='cart-info'>
                 <h2>{name}</h2>
                 <p>{info}</p>
