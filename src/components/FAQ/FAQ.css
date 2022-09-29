@@ -1,0 +1,11 @@
+.FAQ{
+    margin: 2rem;
+    padding: 3rem;
+    background-color: #dee2e6;
+    border: none;
+    border-radius: 10px;
+}
+
+.content h4{
+    font-weight: 600;
+}
