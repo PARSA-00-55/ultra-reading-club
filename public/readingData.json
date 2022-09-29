@@ -1,0 +1,44 @@
+[
+    {
+        "id" : "4071",
+        "name": "Physics", 
+        "img" : "./readingDataimg/Physics.jpg",
+        "info": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+        "time" : 80
+    },
+    {
+        "id": "4072",
+        "name": "Chemistry", 
+        "img": "./readingDataimg/chem-1.jpg",
+        "info": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+        "time": 60
+    },
+    {
+        "id": "4073",
+        "name": "Mathematics", 
+        "img": "./readingDataimg/math.jpg",
+        "info": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+        "time": 55
+    },
+    {
+        "id": "4074",
+        "name": "Biology", 
+        "img": "./readingDataimg/biology.jpg",
+        "info": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+        "time": 40
+    },
+    {
+        "id": "4075",
+        "name": "Bangla", 
+        "img": "./readingDataimg/bangla.jpg",
+        "info": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+        "time": 30
+    },
+    {
+        "id": "4076",
+        "name": "English", 
+        "img": "./readingDataimg/english.jpg",
+        "info": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+        "time": 50
+    }
+]

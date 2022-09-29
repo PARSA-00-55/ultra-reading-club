@@ -1,0 +1,19 @@
+.grand-container{
+    width: min(90%, 1400px);
+    margin :auto;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+/* for tablet screen */
+@media screen and (min-width: 767px) and (max-width: 1023px){
+    .grand-container{
+        grid-template-columns: 1fr;
+    }
+} 
+/* for mobile screen */
+@media screen and (max-width: 767px) {
+    .grand-container{
+        grid-template-columns: 1fr;
+    }
+} 

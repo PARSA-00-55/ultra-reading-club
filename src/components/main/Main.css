@@ -1,0 +1,22 @@
+.main-container{
+    height: 100vh;
+}
+.heading{
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+}
+.heading img{
+    width: 100px;
+}
+.heading-title h1{
+    line-height: 1;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 700;
+}
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    place-items: center;
+}
