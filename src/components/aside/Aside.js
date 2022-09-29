@@ -3,7 +3,16 @@ import Profile from "../profile/Profile";
 import { useState, useEffect } from "react";
 import "./Aside.css";
 
-const Aside = () => {
+const Aside = (subj) => {
+    console.log(subj);
+    // let total =0;
+    // for(const carts of subj){
+
+    //     total = total + carts.duration;
+    // }
+
+
+
   // use state for break time Start ...
   const [breakTime, setBreakTime] = useState(0);
   // use state for break time end ...
@@ -41,9 +50,9 @@ const Aside = () => {
         </div>
       </div>
       <div>
-        <h3>Exercise Details</h3>
+        <h3>Reading Details</h3>
         <h4 className="break-style">
-          Exercise time <span className="total">{} Min</span>
+          Reading time <span className="total">{} Min</span>
         </h4>
       </div>
       <div className="break-style">

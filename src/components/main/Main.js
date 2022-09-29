@@ -10,11 +10,11 @@ const Main = () => {
         fetch('readingData.json')
         .then(res => res.json())
         .then(data => setCard(data));
-    }, [])
+    }, []);
 
     const btnFunction = (card) => {
-        const newCart =[...subj, card];
-        setSubj(newCart)
+        const newSubj = [...subj, card];
+        setSubj(newSubj);
     }
 
     return (
@@ -30,7 +30,7 @@ const Main = () => {
                 }
             </div>
             <div className="profile-container">
-                <Aside></Aside>
+                <Aside subj={subj}></Aside>
             </div>
         </div>
     );
