@@ -3,3 +3,41 @@
     background-color: rgb(231, 229, 229);
     border-radius: 8px;
 }
+.break{
+    margin: 1rem;
+}
+.break-style button{
+    margin: 0.1rem;
+    padding: 0.3rem 0.7rem;
+    border: none;
+    border-radius: 1000px;
+    background-color: #929AAB;
+    transition: 300ms ease-in-out;
+}
+.break-style button:hover{
+    background-color: #393E46;
+    color: white;
+}
+.break-style-title{
+    padding: 1rem;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: lightgrey;
+}
+.activity{
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    background-color: #929AAB;
+    transition: 300ms ease-in-out;
+    border-radius: 5px;
+}
+.activity:hover{
+    background-color: #393E46;
+    color: white;
+    font-weight: 700;
+}

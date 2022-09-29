@@ -3,15 +3,11 @@ import Profile from "../profile/Profile";
 import { useState, useEffect } from "react";
 import "./Aside.css";
 
-const Aside = ({subj}) => {
-    console.log(subj);
-    let total =0;
-    for(const item of subj){
-
-        total = total + item.time;
-    }
-
-
+const Aside = ({ subj }) => {
+  let total = 0;
+  for (const item of subj) {
+    total = total + item.time;
+  }
 
   // use state for break time Start ...
   const [breakTime, setBreakTime] = useState(0);
@@ -41,7 +37,7 @@ const Aside = ({subj}) => {
     <div className="aside-container">
       <Profile></Profile>
       <div className="break">
-        <h3>Add A Break</h3>
+        <h4>Add A Break</h4>
         <div className="break-style">
           <button onClick={() => clickBreakTime(10)}>10 Min</button>
           <button onClick={() => clickBreakTime(20)}>20 Min</button>
@@ -49,16 +45,17 @@ const Aside = ({subj}) => {
           <button onClick={() => clickBreakTime(40)}>40 Min</button>
         </div>
       </div>
-      <div>
-        <h3>Reading Details</h3>
-        <h4 className="break-style">
+      <div className="break">
+        <h4>Reading Details</h4>
+        <h5 className="break-style-title">
           Reading time <span className="total">{total} Min</span>
-        </h4>
-      </div>
-      <div className="break-style">
-        <h4>
+        </h5>
+
+        <h5 className="break-style-title">
           Break Time <span className="total">{breakTime} Min</span>
-        </h4>
+        </h5>
+        <br />
+        <button className="activity">Activity Completed</button>
       </div>
     </div>
   );
