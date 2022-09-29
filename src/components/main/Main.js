@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Card from '../card/Card';
+import Aside from "../aside/Aside";
 import "./Main.css"
 
 const Main = () => {
@@ -10,27 +11,24 @@ const Main = () => {
         .then(data => setCard(data));
     }, [])
 
-
+    const btnFunction = (card) => {
+        console.log(card);
+    }
 
     return (
         <div className='main-container'>
-            {/* logo and heading */}
-            <div className='heading'>
-                <img src="../../website-icon.svg" alt="" />&nbsp;&nbsp;&nbsp;
-                <div className='heading-title'>
-                <h1>
-                    Ultra Reading Club
-                </h1>
-                <h5>
-                    Be a wise persone
-                </h5>
-                </div>
-            </div>
-            {/* card section */}
-            <div className='card-container'>
+            <div className="activities-container">
+                {/* card section */}
                 {
-                    cards.map( card => <Card key={card.id} card={card}></Card>)
+                    cards.map( card => <Card 
+                        key={card.id} 
+                        card={card}
+                        btnFunction={btnFunction}
+                        ></Card>)
                 }
+            </div>
+            <div className="profile-container">
+                <Aside></Aside>
             </div>
         </div>
     );

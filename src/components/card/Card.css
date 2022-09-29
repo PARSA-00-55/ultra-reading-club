@@ -1,9 +1,30 @@
 .card{
-    padding: 0.5rem;
     background-color: #EEEEEE;
+    border-radius: 8px;
 }
 .card img{
     width: 17rem;
     height: 10rem;
+    margin: 0.5rem;
     object-fit: cover;
+    border-radius: 5px;
+}
+.cart-info{
+    margin: 0.2rem 1rem;
+}
+.cart-btn{
+    width: 100%;
+    padding: 0.8rem 0;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    border-radius: 0 0 7px 7px;
+    background-color: #929AAB;
+    transition: 300ms ease-out;
+}
+
+.cart-btn:hover{
+    background-color: #393E46;
+    color: white;
+    font-weight: 700;
 }

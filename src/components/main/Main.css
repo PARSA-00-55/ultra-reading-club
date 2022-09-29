@@ -1,22 +1,29 @@
 .main-container{
-    height: 100vh;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 0.5rem;
 }
-.heading{
-    padding: 3rem;
-    display: flex;
-    align-items: center;
-}
-.heading img{
-    width: 100px;
-}
-.heading-title h1{
-    line-height: 1;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight: 700;
-}
-.card-container{
+
+.activities-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1rem;
+    gap: 1rem;
     place-items: center;
 }
+/* .profile-container{
+    height: 20rem;
+    background-color: blueviolet;
+} */
+
+/* for tablet screen */
+@media screen and (min-width: 767px) and (max-width: 1023px){
+    .main-container{
+        grid-template-columns: 1fr;
+    }
+} 
+/* for mobile screen */
+@media screen and (max-width: 766px) {
+    .main-container{
+        grid-template-columns: 1fr;
+    }
+} 

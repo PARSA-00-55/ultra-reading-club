@@ -1,13 +1,18 @@
 import React from 'react';
 import './Card.css';
 
-const Card = (props) => {
-    const {name, img, info} = props.card
+const Card = ({btnFunction, card}) => {
+    const {name, img, info, time} = card;
+    
     return (
         <div className='card'>
             <img src={img} alt={name} />
-            <h2>{name}</h2>
-            <p>{info}</p>
+            <div className='cart-info'>
+                <h2>{name}</h2>
+                <p>{info}</p>
+                <p>Reading time : {time}min</p>
+            </div>
+            <button className='cart-btn' onClick={() => {btnFunction(card)}}>Add to list</button>
         </div>
     );
 };
