@@ -1,0 +1,32 @@
+.profile-data{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.profile-img img{
+    height: 50px;
+    width: 50px;
+    padding: 0.1rem;
+    border-radius: 50%;
+    background-color: blueviolet;
+}
+
+.avg-datails{
+    background-color: lightgrey;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.avg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.avg p{
+    font-weight: 600;
+    letter-spacing: 1px;
+}

@@ -5,6 +5,7 @@ import "./Main.css"
 
 const Main = () => {
     const [cards, setCard] = useState([]);
+    const [subj, setSubj] = useState([]);
     useEffect(() => {
         fetch('readingData.json')
         .then(res => res.json())
@@ -12,7 +13,8 @@ const Main = () => {
     }, [])
 
     const btnFunction = (card) => {
-        console.log(card);
+        const newCart =[...subj, card];
+        setSubj(newCart)
     }
 
     return (

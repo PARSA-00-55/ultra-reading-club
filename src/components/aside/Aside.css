@@ -1,4 +1,5 @@
 .aside-container{
-    height: 100vh;
-    background-color: powderblue;
+    padding: 0.5rem;
+    background-color: rgb(231, 229, 229);
+    border-radius: 8px;
 }
